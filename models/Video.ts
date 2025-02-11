@@ -9,12 +9,12 @@ export interface IVideo {
     _id?: mongoose.Types.ObjectId;
     title: string;
     description: string;
-    videoUrl: string;
-    thubmnailurl: string;
+    videoUrl?: string;
+    thubmnailurl?: string;
     controls?: boolean;
     transformation?: {
-        height: number;
-        width: number;
+        height?: number;
+        width?: number;
         quality?: number; 
     }
 }
